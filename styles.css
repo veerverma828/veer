@@ -1,0 +1,81 @@
+.carousel-inner {
+  background-color: black !important;
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+  height: 70vh !important;
+}
+
+.carousel-inner img{
+  max-width: 100% !important;
+  max-height: 100% !important;
+}
+/*
+.carousel-control-prev,
+.carousel-control-next {
+  margin-right: 50px;
+  margin-left: 50px;
+} */
+
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+  background-image: url('resumes-desk.jpg'); /* Replace 'your-image-path.jpg' with the path to your image file */
+            background-size: cover; /* Adjust the background size to cover the entire viewport */
+            background-position: center; /* Center the background image */
+            background-repeat: no-repeat; /* Prevent the background image from repeating */
+            height: 100vh; /* Set the body height to 100% of the viewport height */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            
+  color: #333;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px;
+
+}
+
+header {
+
+  color: black;
+  padding: 40px 0;
+  margin-left: 40%;
+  /* background-color: #0077cc; */
+}
+
+header h1 {
+  font-size: 2.5em;
+  margin: 0;
+
+}
+
+header p{
+  margin-block-end: 40px;
+  font-size: 1.5em;
+
+}
+
+
+.highlight {
+  color: #ffffff;
+}
+
+.main-content {
+
+  background-color: rgb(0, 0, 0);
+  padding: 1px;
+  margin-right: 1000px;
+
+
+}
+
+
+
+
+

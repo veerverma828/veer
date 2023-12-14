@@ -1,0 +1,52 @@
+/*:root {
+    --background-color-light: #fff;
+    --text-color-light: #333;
+
+    --background-color-dark: #333;
+    --text-color-dark: #fff;
+}
+
+body {
+    background-color: var(--background-color-light);
+    color: var(--text-color-light);
+    transition: background-color 0.5s, color 0.5s;
+}
+
+body.dark-mode {
+    background-color: var(--background-color-dark);
+    color: var(--text-color-dark);
+}
+*/
+/*
+body {
+    --background-color-light: #fff;
+    --text-color-light: #333;
+
+    --background-color-dark: #333;
+    --text-color-dark: #fff;
+
+    background-color: var(--background-color-light);
+    color: var(--text-color-light);
+    transition: background-color 0.5s, color 0.5s;
+}
+
+body.dark-mode {
+    background-color: var(--background-color-dark);
+    color: var(--text-color-dark);
+}
+*/
+body {
+    background-color: #fff;
+    color: #333;
+    transition: background-color 0.5s, color 0.5s;
+}
+
+body.dark-mode {
+    background-color: #333;
+    color: #fff;
+}
+
+
+
+
+

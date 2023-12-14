@@ -1,0 +1,202 @@
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #eee
+    
+}
+
+.border{
+    border: 1.5px dashed rgb(25, 25, 25);
+    padding: 2px;
+}
+
+
+
+.resume {
+
+    max-width: 700px;
+    background: #ffffff;
+    margin: auto;
+    padding: 40px;
+
+}
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #0077cc;
+    color: white;
+    padding: 10px;
+}
+
+.name-section h1 {
+    margin: 0;
+}
+
+.photo-section img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+}
+
+.section {
+    margin: 20px 0;
+}
+
+.section h2 {
+    background: #0077cc;
+    color: white;
+    padding: 10px;
+    margin: 0;
+}
+
+.education-details,
+.work-experience-details {
+    padding: 10px;
+    background: #f0f0f0;
+}
+
+.education-entry,
+.work-experience-entry {
+    margin-bottom: 10px;
+}
+
+.language-detail{
+    padding: 10px;
+    background: #f0f0f0;
+    
+}
+
+.hobbies-details{
+    padding: 10px;
+    background: #f0f0f0;
+}
+
+h2 {
+    margin-top: 0;
+}
+
+label {
+    display: block;
+    color: #ffffff;
+    cursor: pointer;
+
+}
+
+.inputpic {
+    display: none;
+}
+
+.Years {
+    width: 2%;
+
+}
+
+/*button*/
+
+
+.navigation-bar {
+    background-color: #f2f2f2;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px;
+}
+
+.back-button {
+    background-color: #f2f2f2;
+    border: none;
+    color: #333;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin-right: 10px;
+}
+
+.nav-links a {
+    color: #333;
+    text-decoration: none;
+    padding: 5px;
+}
+
+.nav-links a:hover {
+    background-color: #ddd;
+}
+
+.print-button {
+    padding: 10px;
+    font-size: 14px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+
+@media print {
+    body {
+        -webkit-print-color-adjust: exact;
+        /* Chrome, Safari, newer versions of Opera, and iOS Safari */
+        accent-color: exact;
+        /* Standard property without prefix */
+        print-color-adjust: exact;
+        /* Future standard */
+    }
+}
+
+
+/*@media print { body { -webkit-print-color-adjust: exact; } }*/
+
+
+/*exclude some things to be printed*/
+
+@media print {
+
+    .print-button {
+        display: none;
+    }
+
+    .navigation-bar {
+        display: none;
+    }
+
+    .hideupd {
+        display: none;
+    }
+    /*this is dark mode button*/
+    #toggleDarkMode{
+        display: none;
+    }
+    .hide
+    {
+        display: none;
+    }
+
+    .border{
+        border: none;
+    }
+    
+
+}
+
+
+
+
+
+
+
+
+
+
