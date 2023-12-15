@@ -42,11 +42,16 @@ body {
 }
 
 header {
-
   color: black;
   padding: 40px 0;
   margin-left: 40%;
   /* background-color: #0077cc; */
+}
+
+.text-section{
+  background: linear-gradient(to right, #1613bd 0%, #d915b5 50%,#ea7ea2 100%) !important;
+  background-clip: text !important;
+  -webkit-background-clip: text !important;
 }
 
 header h1 {

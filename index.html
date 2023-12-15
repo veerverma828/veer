@@ -19,17 +19,24 @@
             margin: 0;
         }
 
+        .text-section {
+            /* background: linear-gradient(to right, #1613bd 0%, #d915b5 50%,#ea7ea2 100%) !important; */
+            background-image: url(abstract-design.png);
+            /* background-clip: text !important; */
+            /* -webkit-background-clip: text !important; */
+        }
+
         .container {
             width: 80%;
             display: flex;
             justify-content: space-around;
             align-items: center;
-            
+
         }
 
         .text-section {
-            width: 50%;
-            padding: 10px;
+            width: 45%;
+            padding: 65px;
 
 
         }
@@ -37,11 +44,12 @@
         .carousel-section {
             width: 50%;
             padding: 2px;
-            background-color: #000;
+            background-color: #3e3333;
         }
 
         .carousel-inner img {
-            max-width: 100%;
+            max-width: 80%;
+            margin-left:10%;
             height: auto;
         }
 
@@ -110,8 +118,11 @@
             --_p: 100%
         }
 
+        img:hover {
+            filter: blur(7px);
+        }
 
-        
+
 
         h1 {
             font-family: system-ui, sans-serif;
@@ -124,9 +135,10 @@
 <body>
     <div class="container">
         <div class="text-section">
-            <h1 class="typewriter-text">Resume Maker</h1>
-            <p>Unlock your career potential with our user-friendly Resume Maker, crafting personalized resumes tailored to your professional journey effortlessly</p>
-            <p>Choose Your Desired Resume--></p>
+            <h1 class="typewriter-text">Resume Builder</h1>
+            <p>Unlock your career potential with our user-friendly Resume Maker, crafting personalized resumes tailored
+                to your professional journey effortlessly</p>
+            <p>Choose Your Desired Resume:</p>
 
         </div>
 
@@ -152,12 +164,12 @@
                 <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample"
                     data-bs-slide="prev">
                     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Previous</span>
+                    <span class="visually-hidden-focusable">Previous</span>
                 </button>
                 <button class="carousel-control-next" type="button" data-bs-target="#carouselExample"
                     data-bs-slide="next">
                     <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Next</span>
+                    <span class="visually-hidden-focusable">Next</span>
                 </button>
             </div>
         </div>
