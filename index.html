@@ -8,50 +8,75 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
     <style>
         body {
-            background-image: url(bg-image.jpg);
-            background-size: cover;
-            background-color: #f8f9fa;
-            /* Set your desired background color */
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            height: 100vh;
-            margin: 0;
-        }
+    background-image: url(bg-image.jpg);
+    background-size: cover;
+    background-color: #f8f9fa;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+}
 
-        .container {
-            width: auto;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            
+.container {
+    width: 80%;
+    display: flex;
+    flex-direction: column; /* Change to column layout on small screens */
+    align-items: center;
+}
 
-        }
+.text-section {
+    background-image: url(txtbg-image.png);
+    background-size: cover;
+    width: 100%; /* Occupy full width on small screens */
+    padding: 20px;
+    box-sizing: border-box; /* Include padding in the width */
+}
 
-        .text-section {
-            /* background: linear-gradient(to right, #1613bd 0%, #d915b5 50%,#ea7ea2 100%) !important; */
-            background-image: url(txtbg-image.png);
-            background-size: cover;
-            /* background-clip: text !important; */
-            /* -webkit-background-clip: text !important; */
-            
-            width: auto;
-            padding: 65px;
-            
-        }
-        
-        .carousel-section {
-            
-            min-width: 300px;
-            padding: 2px;
-            background-color: #3e3333;
-        }
+.carousel-section {
+    width: 100%; /* Occupy full width on small screens */
+    padding: 20px;
+    box-sizing: border-box; /* Include padding in the width */
+    background-color: #3e3333;
+}
 
-        .carousel-inner img {
-            max-width: 80%;
-            margin-left: 10%;
-            height: auto;
-        }
+.carousel-inner img {
+    max-width: 80%; /* Make images responsive within the carousel */
+    margin-left: 10%;
+    height: auto;
+}
+
+/* Other existing styles... */
+
+@media screen and (min-width: 670px) {
+    .container {
+        flex-direction: row; /* Revert to row layout on larger screens */
+        justify-content: space-between;
+    }
+
+    .text-section {
+        width: 50%;
+        padding: 65px;
+    }
+
+    .carousel-section {
+        width: 50%;
+        padding: 2px;
+    }
+}
+
+@media screen and (max-width: 669px) {
+    .text-section {
+        width: 80%;
+        padding: 10px;
+    }
+
+    .carousel-section {
+        width: 80%;
+        padding: 10px;
+    }
+}
+
 
         /* Typewriter animation styles */
         .typewriter-text {
@@ -139,7 +164,7 @@
             <p>Unlock your career potential with our user-friendly Resume Maker, crafting personalized resumes tailored
                 to your professional journey effortlessly</p>
             <p>Choose Your Desired Resume:</p>
-            
+
 
         </div>
 
